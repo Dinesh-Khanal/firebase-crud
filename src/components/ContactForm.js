@@ -56,7 +56,7 @@ const ContactForm = ({ saveValue, selectObj }) => {
       <div className="form-group">
         <input
           type="submit"
-          value="save"
+          value={selectObj == "" ? "Add Contact" : "Update Contact"}
           className="btn btn-primary btn-block"
         />
       </div>
